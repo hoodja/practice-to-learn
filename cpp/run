@@ -1,0 +1,8 @@
+#!/bin/bash
+
+rm -f ./PrimeFactors
+clear
+g++ PrimeFactors.cpp -I ./include -L ./lib -lgmock -lgmock_main -lgtest -o PrimeFactors \
+ && ./PrimeFactors
+echo
+echo

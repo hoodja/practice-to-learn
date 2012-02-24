@@ -1,0 +1,6 @@
+#!/bin/bash
+
+clear
+java -cp './lib/*' clojure.main ./PrimeFactors.clj
+echo
+echo
