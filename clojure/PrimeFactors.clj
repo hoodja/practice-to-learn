@@ -2,6 +2,6 @@
   (:use clojure.test midje.sweet))
 
 (deftest testOne
-  (fact (prime-factors-of 1) => []))
+  (fact true => false))
 
 (run-tests 'com.pillartechnology.practice)

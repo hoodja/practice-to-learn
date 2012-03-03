@@ -15,7 +15,7 @@ CXXFLAGS += -g -Wall -Wextra
 
 # All tests produced by this Makefile.  Remember to add new tests you
 # created to the list.
-TESTS = PrimeFactors
+TESTS = run_tests
 
 # All Google Test headers.  Usually you shouldn't change this
 # definition.
@@ -69,5 +69,5 @@ gmock_main.a : gmock-all.o gtest-all.o gmock_main.o
 PrimeFactors.o : $(USER_DIR)/PrimeFactors.cpp $(GMOCK_HEADERS)
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $(USER_DIR)/PrimeFactors.cpp
 
-PrimeFactors: PrimeFactors.o gmock_main.a
+run_tests: PrimeFactors.o gmock_main.a
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -lpthread $^ -o $@
