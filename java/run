@@ -2,7 +2,7 @@
 
 clear
 javac -d . -cp lib/* PrimeFactors.java && \
-java -cp .:lib/* org.junit.runner.JUnitCore com.pillartechnology.practice.PrimeFactors
+java -cp .:lib/* org.junit.runner.JUnitCore com.pillartechnology.practice.PrimeFactors 2>&1 | grep -v "at org.junit"
 echo
 echo
 
