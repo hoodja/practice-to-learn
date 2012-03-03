@@ -1,10 +1,11 @@
 package com.pillartechnology.practice;
 
-import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.*;
+import static org.junit.Assert.assertThat;
+import static org.hamcrest.CoreMatchers.is;
 import static java.util.Arrays.asList;
 
 import java.util.List;
+import java.util.ArrayList;
 import org.junit.Test;
 
 public class PrimeFactors {
@@ -14,8 +15,16 @@ public class PrimeFactors {
   }
 
   @Test
-    public void testOne() {
-      assertEquals(asList(), generate(1));
+  public void testOne() {
+    assertThat(true, is(false));
+  }
+
+  private List<Integer> list(int... ints) {
+    List<Integer> result = new ArrayList<Integer>();
+    for (int i : ints) {
+      result.add(i);
     }
+    return result;
+  }
 }
       
