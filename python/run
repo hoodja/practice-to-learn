@@ -1,0 +1,5 @@
+#!/bin/bash
+clear
+python prime_factors.py
+echo
+echo

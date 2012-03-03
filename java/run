@@ -1,0 +1,8 @@
+#!/bin/bash
+
+clear
+javac -d . -cp lib/* PrimeFactors.java && \
+java -cp .:lib/* org.junit.runner.JUnitCore com.pillartechnology.practice.PrimeFactors
+echo
+echo
+
