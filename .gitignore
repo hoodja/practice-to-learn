@@ -5,4 +5,4 @@ com/
 **/*.o
 **/*.a
 **/*.pyc
-PrimeFactors
+run_tests
