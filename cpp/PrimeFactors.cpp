@@ -5,7 +5,11 @@
 using ::testing::ElementsAre;
 
 std::list<int> PrimeFactors(int n) {
-  return std::list<int>();
+  std::list<int> primes;
+  if (n > 1) {
+    primes.push_back(2);
+  }
+  return primes;
 }
 
 TEST(PrimeFactors, testOne) {

@@ -1,7 +1,10 @@
 import unittest
 
 def prime_factors(n):
-  return []
+  primes = []
+  if n > 1:
+    primes.append(2)
+  return primes
 
 
 class prime_factors_test(unittest.TestCase):
