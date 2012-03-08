@@ -11,7 +11,7 @@ import org.junit.Test;
 public class PrimeFactors {
 
   public static List<Integer> generate(int n) {
-    return null;
+    return new ArrayList<Integer>();
   }
 
   @Test

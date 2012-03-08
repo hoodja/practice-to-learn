@@ -5,7 +5,7 @@
 using ::testing::ElementsAre;
 
 std::list<int> PrimeFactors(int n) {
-  return NULL;
+  return std::list<int>();
 }
 
 TEST(PrimeFactors, testOne) {

@@ -1,7 +1,7 @@
 import unittest
 
 def prime_factors(n):
-  pass
+  return []
 
 
 class prime_factors_test(unittest.TestCase):
