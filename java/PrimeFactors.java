@@ -16,7 +16,7 @@ public class PrimeFactors {
 
   @Test
   public void testOne() {
-    assertThat(true, is(false));
+    assertThat(generate(1), is(list()));
   }
 
   private List<Integer> list(int... ints) {

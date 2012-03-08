@@ -4,6 +4,10 @@
 
 using ::testing::ElementsAre;
 
+std::list<int> PrimeFactors(int n) {
+  return NULL;
+}
+
 TEST(PrimeFactors, testOne) {
-  ASSERT_THAT(true, ::testing::Eq(false));
+  ASSERT_THAT(PrimeFactors(1), ElementsAre());
 }
