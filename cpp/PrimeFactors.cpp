@@ -11,3 +11,7 @@ std::list<int> PrimeFactors(int n) {
 TEST(PrimeFactors, testOne) {
   ASSERT_THAT(PrimeFactors(1), ElementsAre());
 }
+
+TEST(PrimeFactors, testTwo) {
+  ASSERT_THAT(PrimeFactors(2), ElementsAre(2));
+}
