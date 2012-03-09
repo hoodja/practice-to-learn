@@ -3,7 +3,7 @@ import unittest
 def prime_factors(n):
   primes = []
   if n > 1:
-    if n % 2 == 0:
+    while n % 2 == 0:
       primes.append(2)
       n = n / 2
     if n > 1:
