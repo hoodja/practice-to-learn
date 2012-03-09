@@ -26,4 +26,7 @@
 (deftest testEight
   (fact (prime-factors-of 8) => [2, 2, 2]))
 
+(deftest testNine
+  (fact (prime-factors-of 9) => [3, 3]))
+
 (run-tests 'com.pillartechnology.practice)

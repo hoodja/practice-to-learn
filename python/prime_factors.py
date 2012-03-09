@@ -31,5 +31,8 @@ class prime_factors_test(unittest.TestCase):
     def test_eight(self):
         self.assertEqual(prime_factors(8), [2, 2, 2])
 
+    def test_nine(self):
+        self.assertEqual(prime_factors(9), [3, 3])
+
 if __name__ == '__main__':
     unittest.main()

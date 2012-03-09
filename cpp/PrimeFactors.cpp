@@ -42,3 +42,7 @@ TEST(PrimeFactors, testEight) {
   ASSERT_THAT(PrimeFactors(8), ElementsAre(2, 2, 2));
 }
 
+TEST(PrimeFactors, testNine) {
+  ASSERT_THAT(PrimeFactors(9), ElementsAre(3, 3));
+}
+

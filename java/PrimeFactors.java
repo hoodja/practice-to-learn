@@ -54,6 +54,11 @@ public class PrimeFactors {
     assertThat(generate(8), is(list(2, 2, 2)));
   }
 
+  @Test
+  public void testNine() {
+    assertThat(generate(9), is(list(3, 3)));
+  }
+
   private List<Integer> list(int... ints) {
     List<Integer> result = new ArrayList<Integer>();
     for (int i : ints) {
