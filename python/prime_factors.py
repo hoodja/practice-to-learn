@@ -2,12 +2,14 @@ import unittest
 
 def prime_factors(n):
   primes = []
+  candidate = 2
+  while n > 1:
+    while n % candidate == 0:
+      primes.append(candidate)
+      n = n / candidate
+    candidate = candidate + 1
   if n > 1:
-    while n % 2 == 0:
-      primes.append(2)
-      n = n / 2
-    if n > 1:
-      primes.append(n)
+    primes.append(n)
   return primes
 
 

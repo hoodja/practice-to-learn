@@ -1,12 +1,14 @@
 (ns com.pillartechnology.practice
   (:use clojure.test midje.sweet))
 
-(defn prime-factors-of [n] 
+(defn prime-factors-of 
+  ( [n] (prime-factors-of 2 n)) 
+  ( [c n] 
   (if (> n 1) 
-    (if (zero? (mod n 2)) 
-      (cons 2 (prime-factors-of (/ n 2)))
-      [n])
-    []))
+    (if (zero? (mod n c)) 
+      (cons c (prime-factors-of c (/ n c)))
+      (recur (inc c) n))
+    [])))
 
 (deftest testOne
   (fact (prime-factors-of 1) => []))
