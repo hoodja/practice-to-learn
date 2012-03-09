@@ -13,4 +13,7 @@
 (deftest testThree
   (fact (prime-factors-of 3) => [3]))
 
+(deftest testFour
+  (fact (prime-factors-of 4) => [2, 2]))
+
 (run-tests 'com.pillartechnology.practice)

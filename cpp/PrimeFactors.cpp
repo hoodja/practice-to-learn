@@ -24,3 +24,7 @@ TEST(PrimeFactors, testThree) {
   ASSERT_THAT(PrimeFactors(3), ElementsAre(3));
 }
 
+TEST(PrimeFactors, testFour) {
+  ASSERT_THAT(PrimeFactors(4), ElementsAre(2, 2));
+}
+
