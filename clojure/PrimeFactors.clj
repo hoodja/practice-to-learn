@@ -2,7 +2,11 @@
   (:use clojure.test midje.sweet))
 
 (defn prime-factors-of [n] 
-  (if (> n 1) [n] []))
+  (if (> n 1) 
+    (if (zero? (mod n 2)) 
+      (cons 2 (prime-factors-of (/ n 2)))
+      [n])
+    []))
 
 (deftest testOne
   (fact (prime-factors-of 1) => []))
