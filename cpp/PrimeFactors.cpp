@@ -6,17 +6,11 @@ using ::testing::ElementsAre;
 
 std::list<int> PrimeFactors(int n) {
   std::list<int> primes;
-  int candidate = 2;
-  while (n > 1) {
-    while (n % candidate == 0) {
+
+  for(int candidate = 2; n > 1; candidate++)
+    for (; n % candidate == 0; n /= candidate)
       primes.push_back(candidate);
-      n /= candidate;
-    }
-    candidate++;
-  }
-  if (n > 1) {
-    primes.push_back(n);
-  }
+
   return primes;
 }
 

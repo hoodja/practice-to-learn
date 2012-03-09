@@ -1,17 +1,9 @@
 import unittest
 
-def prime_factors(n):
-  primes = []
-  candidate = 2
-  while n > 1:
-    while n % candidate == 0:
-      primes.append(candidate)
-      n = n / candidate
-    candidate = candidate + 1
-  if n > 1:
-    primes.append(n)
-  return primes
-
+def prime_factors(n, candidate=2):
+  if n <= 1: return []
+  if n % candidate != 0: return prime_factors(n, candidate + 1)
+  return [candidate] + prime_factors(n / candidate, candidate)
 
 class prime_factors_test(unittest.TestCase):
 

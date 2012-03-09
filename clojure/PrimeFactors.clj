@@ -4,11 +4,10 @@
 (defn prime-factors-of 
   ( [n] (prime-factors-of 2 n)) 
   ( [c n] 
-  (if (> n 1) 
-    (if (zero? (mod n c)) 
-      (cons c (prime-factors-of c (/ n c)))
-      (recur (inc c) n))
-    [])))
+    (cond 
+      (= n 1) []
+      (zero? (mod n c)) (cons c (prime-factors-of c (/ n c)))
+      :else  (recur (inc c) n))))
 
 (deftest testOne
   (fact (prime-factors-of 1) => []))
