@@ -20,4 +20,7 @@
 (deftest testFour
   (fact (prime-factors-of 4) => [2, 2]))
 
+(deftest testSix
+  (fact (prime-factors-of 6) => [2, 3]))
+
 (run-tests 'com.pillartechnology.practice)
