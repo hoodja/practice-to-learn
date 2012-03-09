@@ -3,7 +3,7 @@ import unittest
 def prime_factors(n):
   primes = []
   if n > 1:
-    primes.append(2)
+    primes.append(n)
   return primes
 
 

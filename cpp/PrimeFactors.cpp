@@ -7,7 +7,7 @@ using ::testing::ElementsAre;
 std::list<int> PrimeFactors(int n) {
   std::list<int> primes;
   if (n > 1) {
-    primes.push_back(2);
+    primes.push_back(n);
   }
   return primes;
 }
